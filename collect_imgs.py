@@ -22,11 +22,11 @@ for j in range(number_of_classes):
     done = False
     while True:
         ret, frame = cam.read()
-        cv2.putText(frame, 'Hello people :)', (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 255, 0), 3,
+        cv2.putText(frame, 'Start Collecting :)', (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 255, 0), 3,
                     cv2.LINE_AA)
         cv2.imshow('frame', frame)
 
-        if cv2.waitKey(25) == ord('q'):
+        if cv2.waitKey(25) == ord('s'):
             break
 
     counter = 0
